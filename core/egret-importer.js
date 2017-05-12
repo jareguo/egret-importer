@@ -236,7 +236,7 @@ function _importAssets(assetdb, cb) {
     }
 
     // generate plist file for the animation frames
-    for (var idx in animFiles) {
+    for (var idx = 0; idx < animFiles.length; idx++) {
         _genPlistForAnim(animFiles[idx], needRefreshUrls);
     }
 
